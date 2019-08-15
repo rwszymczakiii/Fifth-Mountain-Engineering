@@ -1,0 +1,103 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* General */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75 rem 0;
+}
+
+
+/* Utiliy Classes */
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+
+/* Navbar */
+
+#navbar {
+    background: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+    height: 100px;
+}
+
+#navbar .logo img {
+    width: auto;
+    max-height: 100%;
+}
+
+#navbar .title {}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    background: #93cb52;
+    border-radius: 5px;
+}
+
+
+/* Showcase */
+
+#showcase {
+    background: url(/img/pipeline-918414_1920.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+
+.intro {
+    font-size: 1.3rem;
+    margin-bottom: 2rem
+}
