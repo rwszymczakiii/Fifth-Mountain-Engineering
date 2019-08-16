@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 /* Reset */
 
 * {
@@ -10,7 +12,7 @@
 /* General */
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.5;
     height: 100%;
     width: 100%;
@@ -28,7 +30,7 @@ p {
 /* Utiliy Classes */
 
 .text-primary {
-    color: #35402F;
+    color: #4C563B;
 }
 
 .text-center {
@@ -36,7 +38,7 @@ p {
 }
 
 .bg-light {
-    background: #FCF4E2;
+    background: #fff;
     color: #333;
 }
 
@@ -46,7 +48,7 @@ p {
 }
 
 .bg-primary {
-    background: #35402F;
+    background: #5B5F43;
     color: #fff;
 }
 
@@ -88,8 +90,6 @@ p {
 
 .btn {
     display: inline-block;
-    color: #fff;
-    background: #2A2E28;
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 5px;
@@ -100,7 +100,7 @@ p {
 }
 
 .btn-dark {
-    background: #333;
+    background: #2A2E28;
     color: #fff;
 }
 
@@ -125,8 +125,6 @@ p {
 /* Navbar */
 
 #navbar {
-    background: #2A2E28;
-    color: #fff;
     position: sticky;
     top: 0;
     display: flex;
@@ -185,12 +183,18 @@ p {
     height: 100vh;
 }
 
+#showcase h1 {
+    font-size: 3.5rem;
+    padding-top: 11rem;
+    text-align: center;
+    text-anchor: initial;
+}
+
 
 /* About */
 
 #about {
     height: 300px;
-    border-top: #111 solid 2px;
 }
 
 #about .container {
@@ -216,11 +220,37 @@ p {
 /* Services */
 
 
+/* Projects */
+
+#projects .container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#projects h2 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+#projects h4 {
+    padding-bottom: 1rem;
+}
+
+#projects .container {
+    margin: 2rem 0;
+}
+
+#projects p {
+    font-size: 0.75rem;
+}
+
+
 /* Contact */
 
 #contact {
     display: flex;
-    border-top: #333 solid 1px;
 }
 
 #contact #office-img,
@@ -229,12 +259,11 @@ p {
 }
 
 #contact #office-img {
-    border-left: #333 solid 1px;
     background: url(../img/office-1209640_1920.jpg) no-repeat center center/cover;
 }
 
 #contact .contact-form .form-group {
-    margin: 0.75rem;
+    padding-bottom: 1rem;
 }
 
 #contact .contact-form label {
@@ -247,10 +276,17 @@ p {
     padding: 0.5rem;
 }
 
+::placeholder {
+    color: #000;
+}
+
+#contact .contact-form .btn:hover {
+    color: #000;
+}
+
 
 /* Footer */
 
 #main-footer {
     font-size: 0.75rem;
-    border-top: #333;
 }
