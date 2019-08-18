@@ -1,0 +1,43 @@
+/* Navbar */
+
+#navbar {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    font-size: 0.6rem;
+}
+
+#navbar h1 {
+    font-size: 1rem;
+}
+
+#navbar .title p {
+    display: none;
+}
+
+#navbar .logo {
+    display: none;
+}
+
+
+/* Showcase */
+
+#showcase #showcase-content h1 {
+    margin: 5rem 0 1rem 0;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+#showcase
+/* About */
+
+#about {
+    flex-direction: column;
+}
+
+
+/* Contact */
+
+#contact #office-img {
+    display: none;
+}
