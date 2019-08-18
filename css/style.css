@@ -30,7 +30,7 @@ p {
 /* Utiliy Classes */
 
 .text-primary {
-    color: #4C563B;
+    color: #8C8664;
 }
 
 .text-center {
@@ -38,8 +38,13 @@ p {
 }
 
 .bg-light {
-    background: #fff;
+    background: #FAF5E2;
     color: #333;
+}
+
+.bg-grey {
+    background: #555;
+    color: #fff;
 }
 
 .bg-dark {
@@ -52,6 +57,10 @@ p {
     color: #fff;
 }
 
+.bg-secondary {
+    background: #365739;
+}
+
 .l-heading {
     font-size: 4rem;
     margin-bottom: 0.75rem;
@@ -62,6 +71,11 @@ p {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem
 }
 
 .py-1 {
@@ -88,6 +102,22 @@ p {
     padding: 3rem;
 }
 
+.p-5 {
+    padding: 5rem;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+.px-3 {
+    padding: 0 3rem;
+}
+
 .btn {
     display: inline-block;
     padding: 0.5rem 2rem;
@@ -104,10 +134,21 @@ p {
     color: #fff;
 }
 
+.btn-dark:hover {
+    color: #000;
+}
+
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 0 2rem;
+    overflow: hidden;
+}
+
+.container-2 {
+    max-width: 1100px;
+    margin: auto 0;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -119,6 +160,21 @@ p {
 .list li {
     padding: 0.5rem 0;
     border-bottom: #444 dotted 1px;
+}
+
+::placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.card {
+    height: 30rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 3rem;
 }
 
 
@@ -183,11 +239,22 @@ p {
     height: 100vh;
 }
 
-#showcase h1 {
-    font-size: 3.5rem;
-    padding-top: 11rem;
+#showcase #showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    text-anchor: initial;
+    height: 50%;
+    padding: 0 2rem;
+}
+
+#showcase #showcase-content h1 {
+    font-size: 3.5rem;
+}
+
+#showcase #showcase-content a {
+    margin-top: -0.5rem;
 }
 
 
@@ -195,55 +262,82 @@ p {
 
 #about {
     height: 300px;
-}
-
-#about .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+#about .bio-pic {
+    flex: 1;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #about .bio-pic img {
-    height: 75%;
+    height: 90%;
     width: auto;
     border-radius: 5px;
 }
 
-#about .container #bio {
+#about #bio {
     margin-right: auto;
+    flex: 2;
 }
 
-#about .container #bio h2 {
+#about #bio h2 {
     padding-bottom: 1rem;
 }
 
+#about #clients-btn {
+    flex: 1;
+}
 
-/* Services */
+#about #clients-btn a {
+    color: #000;
+    font-size: 6rem;
+    line-height: 1;
+    background: none;
+}
+
+#about #clients-btn a:hover {
+    color: #8C8664;
+}
 
 
 /* Projects */
 
-#projects .container {
+#projects {
     display: flex;
-    flex-direction: column;
-    align-self: center;
+    justify-content: center;
+    padding-bottom: 8rem;
 }
 
-#projects h2 {
-    font-size: 4rem;
+#projects .container-2 #projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0rem;
+    justify-content: space-evenly;
+}
+
+#projects .container-2 #projects-container .pipes-img {
+    background: url(../img/pipes-753700_1920.jpg) no-repeat center center/cover;
+    height: 40%;
+    width: auto;
+}
+
+#projects .container-2 #projects-container h3 {
+    padding: 1rem 1rem;
+}
+
+#projects .container-2 #projects-container p {
+    align-self: flex-end;
+    font-size: 1rem;
     text-align: center;
-    padding: 2rem;
 }
 
-#projects h4 {
-    padding-bottom: 1rem;
-}
-
-#projects .container {
-    margin: 2rem 0;
-}
-
-#projects p {
-    font-size: 0.75rem;
+#projects .container-2 #projects-container .container {
+    margin-top: 1.5rem;
 }
 
 
@@ -251,6 +345,11 @@ p {
 
 #contact {
     display: flex;
+    flex-direction: row;
+}
+
+#contact .contact-form h3 {
+    padding-bottom: 2rem;
 }
 
 #contact #office-img,
@@ -283,6 +382,9 @@ p {
 #contact .contact-form .btn:hover {
     color: #000;
 }
+
+
+/* Clients */
 
 
 /* Footer */
