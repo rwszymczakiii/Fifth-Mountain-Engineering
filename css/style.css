@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
+    line-height: 1.6;
     --primary: #458f8f;
     --secondary: #93d9d9;
     --highlight: #00ffff;
@@ -17,6 +17,16 @@ body {
 
 h1 {
     font-family: 'Merriweather', serif;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 ul {
@@ -76,11 +86,12 @@ nav #title {
 
 nav ul {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     text-align: center;
     font-size: 1rem;
     grid-gap: 1rem;
     justify-self: end;
+    padding-right: 4rem;
 }
 
 nav a {
@@ -89,6 +100,12 @@ nav a {
 
 nav a:hover {
     color: var(--highlight);
+}
+
+.bio-body nav ul {
+    display: block;
+    align-self: center;
+    margin: 1rem 10rem 0 0;
 }
 
 
@@ -135,61 +152,15 @@ nav a:hover {
 }
 
 
-/* About */
-
-#about {
-    padding: 5rem;
-}
-
-#about h2 {
-    color: var(--primary);
-    font-size: 5rem;
-}
-
-#about p {
-    padding-bottom: 2rem;
-}
-
-#about a {
-    background: #222;
-    color: #fff;
-    margin-left: 0rem;
-}
-
-#about a:hover {
-    color: var(--secondary);
-}
-
-
-/* Bio */
-
-#bio {
-    display: flex;
-    flex-direction: column;
-}
-
-#bio-img {
-    background: url(../img/bio-pic.jpg) no-repeat center;
-    background-size: contain;
-    height: 8.5rem;
-    width: auto;
-    margin-top: 5rem;
-}
-
-#bio p {
-    padding: 5rem;
-    line-height: 1.6;
-}
-
-
 /* Services */
 
 #services {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(5, 1fr);
-    height: 100vh;
+    height: 65vh;
     text-align: center;
+    margin-top: 2rem;
 }
 
 #services h2 {
@@ -255,13 +226,85 @@ i {
 }
 
 
+/* Projects */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 15rem 0 15rem;
+}
+
+#projects h2 {
+    padding-bottom: 5rem;
+}
+
+#projects h4 {
+    padding-bottom: 1.25rem;
+}
+
+#projects p {
+    line-height: 2;
+    padding-bottom: 2.5rem;
+}
+
+
+/* About */
+
+#about {
+    padding: 10rem;
+}
+
+#about p {
+    line-height: 2;
+    padding-bottom: 2rem;
+}
+
+#about a {
+    background: #222;
+    color: #fff;
+    margin-left: 0rem;
+}
+
+#about a:hover {
+    color: var(--secondary);
+}
+
+
+/* Bio */
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5rem;
+}
+
+#bio-img {
+    background: url(../img/bio-pic.jpg) no-repeat center;
+    background-size: contain;
+    height: 8.5rem;
+    width: auto;
+    margin-top: 5rem;
+}
+
+#bio p {
+    padding: 4rem 20rem 5rem 20rem;
+    line-height: 2;
+}
+
+#bio-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
 /* Contact */
 
 #contact {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30rem;
+    height: 35rem;
     background: var(--primary);
 }
 
@@ -314,10 +357,4 @@ i {
 
 .footer p {
     padding-right: 1rem;
-}
-
-.about-footer .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }

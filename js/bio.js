@@ -1,7 +1,10 @@
-//smooth scrolling
+//load page at correct section
 $('#navbar a').on('click', function(event) {
     if (this.hash !== '') {
         event.preventDefault();
+
+        $('#showcase').load("./index.html");
+        alert("k");
 
         const hash = this.hash;
         $('html, body').animate({
