@@ -14,9 +14,9 @@
     <title>Fifth Mountain Engineering, PLLC | Consulting</title>
 </head>
 
-<body>
+<body id="home">
     <!-- Navbar -->
-    <nav>
+    <nav id="navbar">
         <div class="wrapper">
             <div id="logo"></div>
             <div id="title">
@@ -27,8 +27,7 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="services">Services</a></li>
-            <li><a href="./clients.html">Clients</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -42,9 +41,20 @@
         <p>to turn today's challenge into tomorrow's success."</p>
     </section>
 
+    <!-- About -->
+    <section id="about">
+        <h2>About</h2>
+        <p>Fifth Mountain Engineering, PLLC, was established in February 2017. The firm’s focus is on providing processional engineering, technical support, consulting, and project management services for natural gas, pipeline, utility, and industrial public
+            and private clients. Fifth Mountain Engineering, PLLC is a small business currently registered to do business in Virginia and North Carolina. Martin C. Rodgers, P.E., the firm’s founder, brings over 41 years of progressive experience as an
+            engineer and manager capable of defining objectives; formulating and implementing innovative, cost-effective solutions; and effectively communicating with all parties involved in complex projects.</p>
+        <p>Mr. Rodgers is grateful to those clients, colleagues and friends that have made it possible for him to open the doors to Fifth Mountain Engineering, PLLC; enabling him to continuing providing quality consulting service to an industry that he has
+            served with integrity his entire working career.</p>
+        <a href="./about.html" class="btn">Read More</a>
+    </section>
+
     <!-- Services -->
     <section id="services">
-        <h2><span>My</span> services</h2>
+        <h2>Services</h2>
         <div id="management">
             <i class="fas fa-tasks"></i>
             <h3>Project Management</h3>
@@ -57,7 +67,7 @@
             <i class="fas fa-keyboard"></i>
             <h3>Technical Writing</h3>
         </div>
-        <div id="expanded">
+        <div id="services-list">
             <ul>
                 <li>Distribution</li>
                 <li>|</li>
@@ -76,8 +86,46 @@
         </div>
     </section>
 
+    <!-- Section: Contact -->
+    <section id="contact">
+        <div class="contact-form">
+            <h3>Contact</h3>
+            <form action=" ">
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone"></label>
+                    <input type="text" name="phone" id="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message"></label>
+                    <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </div>
+    </section>
 
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>mcrpe@fifthmountainengineering.com</p>
+        <p>|</p>
+        <p>(804) 241-3040</p>
+        <p>|</p>
+        <p>Copyright &copy; 2019, Fifth Mountain Engineering, PLLC, All Rights Reserved</p>
+    </footer>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Local JS -->
+    <script src="js/main.js "></script>
 </body>
-
 
 </html>
