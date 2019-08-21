@@ -34,84 +34,123 @@ nav li {
     font-size: 2.5rem;
 }
 
-@media(max-width: 1100px) {
+@media(max-width: 1000px) {
     #showcase p {
         font-size: 2rem;
     }
-    @media(max-width: 900px) {
+    #showcase h1 {
+        font-size: 3rem;
+        justify-self: flex-start;
+    }
+    #showcase p {
+        font-size: 1.5rem;
+    }
+    #services {
+        display: flex;
+        flex-direction: column;
+    }
+    #services h2 {
+        justify-self: center;
+        align-self: center;
+        padding-top: 1rem;
+    }
+    #management,
+    #gas,
+    #writing {
+        margin-bottom: 3rem;
+    }
+    #services div:nth-child(2) {
+        order: 1;
+    }
+    #services-list {
+        display: none;
+    }
+    #projects {
+        margin: 10rem 8rem;
+    }
+    #projects h2 {
+        padding-bottom: 1rem;
+        padding-top: 8rem;
+    }
+    #projects p {
+        text-align: start;
+    }
+    #about {
+        padding: 0 5rem 5rem 5rem;
+        margin-top: -5rem;
+    }
+    #about h2 {
+        padding-bottom: 1rem;
+    }
+    #about p {
+        text-align: start;
+    }
+    .footer {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer p:nth-child(even) {
+        display: none;
+    }
+    @media(max-width: 630px) {
+        #navbar {
+            height: 90px;
+        }
+        #navbar h1 {
+            font-size: 1rem;
+        }
+        #navbar p,
+        #navbar a {
+            font-size: 0.8rem;
+        }
+        .overlay {
+            top: 105px;
+        }
         #showcase h1 {
-            font-size: 3rem;
-            justify-self: flex-start;
+            font-size: 2.5rem;
         }
         #showcase p {
-            font-size: 1.5rem;
-        }
-        #services {
-            display: flex;
-            flex-direction: column;
-        }
-        #services h2 {
-            justify-self: center;
-            align-self: center;
-            padding-top: 1rem;
-        }
-        #management,
-        #gas,
-        #writing {
-            margin-bottom: 3rem;
-        }
-        #services div:nth-child(2) {
-            order: 1;
-        }
-        #services-list {
-            display: none;
+            font-size: 1.2rem;
         }
         #projects {
-            margin: 10rem 8rem;
+            margin: 15rem 4rem 10rem 4rem;
         }
-        #projects p {
-            text-align: start;
-        }
-        #about {
-            padding: 0 5rem 5rem 5rem;
-            margin-top: -5rem;
-        }
-        #about h2 {
-            padding-bottom: 1rem;
-        }
-        #about p {
-            text-align: start;
-        }
-        .footer {
-            height: 100px;
-            display: flex;
-            flex-direction: column;
-        }
-        .footer p:nth-child(even) {
-            display: none;
-        }
-        @media(max-width: 575px) {
-            #navbar {
-                height: 90px;
+        @media(max-width: 510px) {
+            #navbar #title {
+                padding-left: 0.5rem;
             }
             #navbar h1 {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
-            #navbar p,
+            #navbar p {
+                padding-top: 0.3rem;
+                font-size: 0.5rem;
+            }
             #navbar a {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
             }
-            .overlay {
-                top: 105px;
+            #navbar ul {
+                padding-left: 0.5rem;
+            }
+            #navbar li {
+                padding: 0 0.1rem;
             }
             #showcase h1 {
-                font-size: 2.5rem;
+                padding: 0 0 0.5rem 0.25rem;
+                font-size: 2rem;
             }
             #showcase p {
-                font-size: 1.15rem;
+                padding-right: 0.15rem;
+                font-size: 0.8rem;
+                font-weight: bold;
             }
-            #projects {
-                margin: 15rem 4rem 10rem 4rem;
+            #services h2,
+            h2 {
+                font-size: 4rem;
+            }
+            #projects p {
+                padding-bottom: 5rem;
             }
         }
     }
