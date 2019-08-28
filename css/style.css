@@ -362,3 +362,11 @@ i {
 .footer p {
     padding-right: 1rem;
 }
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: var(--highlight);
+}
