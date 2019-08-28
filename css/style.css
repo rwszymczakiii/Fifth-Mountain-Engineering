@@ -115,6 +115,7 @@ nav a:hover {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2rem;
 }
 
 #showcase-img {
@@ -161,6 +162,7 @@ nav a:hover {
     height: 65vh;
     text-align: center;
     margin-top: 2rem;
+    padding-top: 3rem;
 }
 
 #services h2 {
@@ -195,6 +197,7 @@ i {
     grid-row: 2/3;
     justify-self: center;
     align-self: center;
+    margin-bottom: 3rem;
 }
 
 #writing {
@@ -231,6 +234,7 @@ i {
 #projects {
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
     margin: 5rem 15rem 0 15rem;
 }
 
@@ -251,7 +255,7 @@ i {
 /* About */
 
 #about {
-    padding: 10rem;
+    padding: 4rem 5rem 8rem 5rem;
 }
 
 #about p {
