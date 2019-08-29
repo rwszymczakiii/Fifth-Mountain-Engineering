@@ -22,6 +22,10 @@ nav {
     line-height: 1.75;
 }
 
+.footer {
+    padding: 0.5rem 0;
+}
+
 @media(max-width: 850px) {
     .footer {
         height: 75px;
@@ -32,7 +36,7 @@ nav {
         display: none;
     }
     #bio p {
-        padding: 1rem 6rem 4rem 10rem;
+        padding: 1rem 6rem 4rem 6rem;
         line-height: 1.75;
     }
     #bio-img {
@@ -67,16 +71,53 @@ nav {
         #navbar ul {
             margin-top: 0;
         }
+        #bio p {
+            padding: 1rem 3rem 4rem 3rem;
+        }
         @media(max-width: 480px) {
             #navbar h1 {
                 font-size: 0.8rem;
             }
             #navbar p,
             #navbar a {
-                font-size: 0.75rem;
+                font-size: 0.65rem;
             }
             #navbar ul {
                 margin-top: 0;
+            }
+            #navbar .wrapper {
+                padding-left: 0;
+            }
+            @media(max-width: 375px) {
+                #navbar {
+                    height: 70px;
+                }
+                #navbar .wrapper {
+                    padding: 0.2rem 0 0.2rem 0;
+                }
+                #navbar h1 {
+                    font-size: 0.8rem;
+                }
+                #navbar p {
+                    padding-top: 0.2rem;
+                    font-size: 0.5rem;
+                }
+                #navbar ul {
+                    margin: 0;
+                    padding: 0;
+                }
+                #navbar a {
+                    font-size: 0.6rem;
+                    text-align: center;
+                }
+                #bio p {
+                    padding: 1rem 1.5rem 3rem 1.5rem;
+                }
+                .footer p {
+                    padding: 0;
+                    font-size: 0.75rem;
+                    text-align: center;
+                }
             }
         }
     }

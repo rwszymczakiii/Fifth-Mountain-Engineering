@@ -34,6 +34,10 @@ nav li {
     font-size: 2.5rem;
 }
 
+.footer p {
+    padding: 0.05rem 0;
+}
+
 @media(max-width: 1000px) {
     #showcase p {
         font-size: 2rem;
@@ -151,6 +155,61 @@ nav li {
             }
             #projects p {
                 padding-bottom: 5rem;
+            }
+            @media(max-width: 375px) {
+                #navbar {
+                    height: 60px;
+                }
+                #navbar .wrapper {
+                    padding: 0.5rem 0 0.2rem 0;
+                }
+                #navbar h1 {
+                    font-size: 0.7rem;
+                }
+                #navbar p {
+                    padding-top: 0.2rem;
+                    font-size: 0.4rem;
+                }
+                #navbar a {
+                    font-size: 0.5rem;
+                }
+                #showcase .overlay {
+                    top: 75px;
+                }
+                #showcase h1 {
+                    padding: 0 0 0.3rem 0.25rem;
+                    font-size: 1.5rem;
+                }
+                #showcase p {
+                    padding-right: 0.25rem;
+                    font-size: 0.7rem;
+                }
+                #projects {
+                    margin: 15rem 3rem 10rem 2rem;
+                }
+                #projects h2 {
+                    padding-bottom: 2rem;
+                }
+                #projects h4 {
+                    font-size: 1.4rem;
+                }
+                #about {
+                    padding: 0 2rem 5rem 2rem;
+                }
+                #contact input,
+                #contact textarea {
+                    width: 100%;
+                    padding: 0.5rem;
+                    margin-bottom: 1rem;
+                }
+                .contact-form .btn {
+                    margin-left: 0.5rem;
+                }
+                .footer p {
+                    padding: 0;
+                    font-size: 0.75rem;
+                    text-align: center;
+                }
             }
         }
     }
