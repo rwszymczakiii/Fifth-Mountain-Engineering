@@ -11,8 +11,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     --primary: #458f8f;
-    --secondary: #93d9d9;
+    --secondary: #377474;
     --highlight: #00ffff;
+    --nav-height: 100px;
 }
 
 h1 {
@@ -54,8 +55,10 @@ a {
 /* Navbar */
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
+    height: var(--nav-height);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 80px;
@@ -63,7 +66,6 @@ nav {
     align-items: flex-end;
     background: #222;
     color: #eee;
-    padding-bottom: 15px;
     z-index: 3;
 }
 
@@ -102,10 +104,16 @@ nav a:hover {
     color: var(--highlight);
 }
 
-.bio-body nav ul {
-    display: block;
-    align-self: center;
-    margin: 1rem 10rem 0 0;
+#nav-spacing {
+    height: var(--nav-height);
+}
+
+#navbar .you-are-here {
+    color: #999;
+}
+
+#navbar .you-are-here:hover {
+    cursor: pointer;
 }
 
 
@@ -120,7 +128,8 @@ nav a:hover {
 
 #showcase-img {
     background: url(../img/showcase.jpg) no-repeat center center/cover;
-    height: 50vh;
+    height: 65vh;
+    width: 100%;
     grid-column: 1/4;
     grid-row: 1/4;
 }
@@ -128,8 +137,7 @@ nav a:hover {
 .overlay {
     background: rgba(0, 0, 0, 0.35);
     position: absolute;
-    top: 95px;
-    height: 50vh;
+    height: 65vh;
     width: 100%;
     z-index: 1;
 }
@@ -148,7 +156,7 @@ nav a:hover {
     font-size: 2.75rem;
     grid-column: 1/4;
     justify-self: end;
-    padding: 0.5rem 1rem 0 0;
+    padding: 1rem 1rem 0 0;
     letter-spacing: 0.15rem;
 }
 
@@ -157,9 +165,8 @@ nav a:hover {
 
 #services {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(5, 1fr);
-    height: 65vh;
     text-align: center;
     margin-top: 2rem;
     padding-top: 3rem;
@@ -170,7 +177,7 @@ nav a:hover {
     font-size: 5rem;
     grid-column: 2/5;
     grid-row: 1/2;
-    align-self: flex-end;
+    align-self: center;
     justify-content: flex-start;
 }
 
@@ -211,11 +218,11 @@ i {
 #services-list {
     grid-column: 1/6;
     grid-row: 3/4;
-    background: rgba(0, 0, 0, 0.1);
-    height: 75%;
-    align-self: center;
+    background: #ebebeb;
+    height: 80px;
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 #services-list ul {
@@ -228,14 +235,55 @@ i {
     padding: 1rem;
 }
 
+#services-list a:hover {
+    font-weight: bolder;
+}
+
+#services-page {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+#first-div {
+    margin: 5rem 15rem 0 15rem;
+}
+
+#second-div {
+    margin: 3rem 10rem 5rem 10rem;
+}
+
+#services-page div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+#services-page div:nth-child(2) div:first-child {
+    grid-column: 1/2;
+}
+
+#services-page h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#services-page p {
+    padding-bottom: 4rem;
+}
+
+#services-page ul li ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+
 
 /* Projects */
 
 #projects {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
-    margin: 5rem 15rem 0 15rem;
+    margin: 5rem 15rem;
 }
 
 #projects h2 {
@@ -255,7 +303,7 @@ i {
 /* About */
 
 #about {
-    padding: 4rem 5rem 8rem 5rem;
+    padding: 5rem 7rem;
 }
 
 #about p {
@@ -309,8 +357,8 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35rem;
     background: var(--primary);
+    height: 77vh;
 }
 
 .contact-form {
@@ -347,6 +395,11 @@ i {
     font-family: 'Montserrat', sans-serif;
 }
 
+#contact-page-spacing {
+    height: 12vh;
+    background: var(--primary);
+}
+
 
 /* Footer */
 
@@ -357,7 +410,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 90px;
 }
 
 .footer p {
@@ -370,4 +423,15 @@ i {
 
 .footer a:hover {
     color: var(--highlight);
+}
+
+#bio-footer {
+    margin-top: 100vh;
+}
+
+
+/* Extras */
+
+.fill-page {
+    height: 80vh;
 }

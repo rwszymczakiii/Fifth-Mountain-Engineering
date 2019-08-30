@@ -3,7 +3,7 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 110px;
+    --nav-height: 130px;
 }
 
 nav .wrapper {
@@ -21,8 +21,9 @@ nav li {
     padding: 0 1rem;
 }
 
+#showcase-img,
 .overlay {
-    top: 125px;
+    height: 50vh;
 }
 
 #showcase h1 {
@@ -34,8 +35,39 @@ nav li {
     font-size: 2.5rem;
 }
 
+#services-page div:nth-child(2) {
+    flex-direction: column;
+}
+
+#first-div {
+    margin: 5rem 5rem 0 5rem;
+}
+
+#second-div {
+    margin: 3rem 5rem 5rem 5rem;
+}
+
+#about h2 {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+#bio p {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+#contact-page-spacing {
+    height: 0rem;
+}
+
+#contact {
+    height: 100vh;
+}
+
 .footer p {
     padding: 0.05rem 0;
+    font-size: 0.65rem;
 }
 
 @media(max-width: 1000px) {
@@ -99,7 +131,7 @@ nav li {
     }
     @media(max-width: 630px) {
         #navbar {
-            height: 90px;
+            --nav-height: 110px;
         }
         #navbar h1 {
             font-size: 1rem;
@@ -108,9 +140,6 @@ nav li {
         #navbar a {
             font-size: 0.8rem;
         }
-        .overlay {
-            top: 105px;
-        }
         #showcase h1 {
             font-size: 2.5rem;
         }
@@ -118,7 +147,7 @@ nav li {
             font-size: 1.2rem;
         }
         #projects {
-            margin: 15rem 4rem 10rem 4rem;
+            margin: -2rem 4rem 5rem 4rem;
         }
         @media(max-width: 510px) {
             #navbar #title {
@@ -156,25 +185,15 @@ nav li {
             #projects p {
                 padding-bottom: 5rem;
             }
+            #bio {
+                height: 120vh;
+            }
             @media(max-width: 375px) {
                 #navbar {
-                    height: 60px;
+                    --nav-height: 100px;
                 }
                 #navbar .wrapper {
                     padding: 0.5rem 0 0.2rem 0;
-                }
-                #navbar h1 {
-                    font-size: 0.7rem;
-                }
-                #navbar p {
-                    padding-top: 0.2rem;
-                    font-size: 0.4rem;
-                }
-                #navbar a {
-                    font-size: 0.5rem;
-                }
-                #showcase .overlay {
-                    top: 75px;
                 }
                 #showcase h1 {
                     padding: 0 0 0.3rem 0.25rem;
@@ -192,9 +211,6 @@ nav li {
                 }
                 #projects h4 {
                     font-size: 1.4rem;
-                }
-                #about {
-                    padding: 0 2rem 5rem 2rem;
                 }
                 #contact input,
                 #contact textarea {

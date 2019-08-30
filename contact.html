@@ -14,7 +14,7 @@
     <title>Fifth Mountain Engineering, PLLC | Consulting</title>
 </head>
 
-<body id="home" class="bio-body">
+<body>
     <!-- removing home messes up the navbar and footer-->
 
     <!-- Navbar -->
@@ -30,28 +30,43 @@
             <li><a href="./index.html">Home</a></li>
             <li><a href="./services.html">Services</a></li>
             <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./bio.html">About</a></li>
             <li>
-                <a> <span class="you-are-here">About</span></a>
+                <a><span class="you-are-here">Contact</span></a>
             </li>
-            <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div id="nav-spacing"></div>
-    <!-- Bio -->
-    <section id="bio" class="fill-page">
-        <div class="wrapper">
-            <div id="bio-img"></div>
-            <p>Martin C. Rodgers graduated from the University of Pittsburgh in 1978 with a degree in Civil Engineering. He is a Registered Professional Engineer in Virginia, North Carolina, South Carolina, and Maine. For over 41 years Mr. Rodgers has served
-                as an engineer and manager with a concentration on energy and utilities. His experience includes department and office management; management of multi-million-dollar pipeline projects as well on day-to-day lead engineering, design, operations,
-                QA/QC, and marketing; regulatory compliance; permitting; scheduling; cost estimating; budget preparation; preparing and presenting studies and reports including economic evaluations; technical writing; and construction management and inspection
-                services. A detailed resume is available upon request.
-            </p>
+
+    <!-- Section: Contact -->
+    <div id="contact-page-spacing"></div>
+    <section id="contact" class="fill-page">
+        <div class="contact-form">
+            <h3>Contact</h3>
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone"></label>
+                    <input type="text" name="phone" id="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message"></label>
+                    <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn">
+            </form>
         </div>
     </section>
 
     </section>
     <!-- Footer -->
-    <footer class="footer" id="bio-footer">
+    <footer class="footer">
         <p>mcrpe@fifthmountainengineering.com</p>
         <p>|</p>
         <p>(804) 241-3040</p>
