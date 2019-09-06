@@ -1,23 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap");
 
 /* General Stylings */
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 1.6;
     --primary: #458f8f;
-    --secondary: #377474;
+    --primary-dark: #377474;
     --highlight: #00ffff;
     --nav-height: 100px;
+    background: #f8fafa;
 }
 
 h1 {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
 }
 
 h2 {
@@ -44,6 +46,7 @@ a {
     border: none;
     border-radius: 5px;
     margin: 1rem;
+    transition: all 0.25s ease;
 }
 
 .btn:hover {
@@ -164,93 +167,70 @@ nav a:hover {
 /* Services */
 
 #services {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    align-content: space-between;
+    padding: 5rem 14rem;
+    background: #e2e4e4;
+}
+
+#services div:first-child {
+    width: 60%;
+}
+
+#services div:nth-child(2) {
     text-align: center;
-    margin-top: 2rem;
-    padding-top: 3rem;
+    align-self: center;
+    margin-left: 10rem;
 }
 
 #services h2 {
     color: var(--primary);
     font-size: 5rem;
-    grid-column: 2/5;
-    grid-row: 1/2;
-    align-self: center;
-    justify-content: flex-start;
+    padding-bottom: 2rem;
 }
 
-#services span {
-    color: var(--primary);
+#services p {
+    line-height: 2;
 }
 
 i {
-    font-size: 4rem;
-    padding: 1rem;
-    margin-top: 2rem;
+    font-size: 7rem;
+    padding: 2rem;
+    transition: all 0.75s ease;
 }
 
-#management {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    height: 50%;
-    justify-self: flex-end;
-    align-self: center;
+#services h3 {
+    font-size: 1.75rem;
+    transition: all 0.75s ease;
 }
 
-#gas {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    justify-self: center;
-    align-self: center;
-    margin-bottom: 3rem;
+#services div:nth-child(2):hover i {
+    font-size: 8rem;
 }
 
-#writing {
-    grid-column: 5/6;
-    grid-row: 1/3;
-    height: 50%;
-    justify-self: flex-start;
-    align-self: center;
-}
-
-#services-list {
-    grid-column: 1/6;
-    grid-row: 3/4;
-    background: #ebebeb;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-#services-list ul {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-}
-
-#services-list li {
-    padding: 1rem;
-}
-
-#services-list a:hover {
-    font-weight: bolder;
+#services div:nth-child(2):hover h3 {
+    font-size: 1.9rem;
 }
 
 #services-page {
     display: flex;
     flex-direction: column;
-    line-height: 2;
 }
 
 #first-div {
-    margin: 5rem 15rem 0 15rem;
+    margin: 5rem 15rem;
+}
+
+.underline {
+    width: 66%;
+    height: 5px;
+    margin: 0 auto;
+    background: var(--primary);
 }
 
 #second-div {
     margin: 3rem 10rem 5rem 10rem;
+    line-height: 2;
 }
 
 #services-page div:nth-child(2) {
@@ -264,7 +244,6 @@ i {
 
 #services-page h2 {
     text-align: center;
-    padding-bottom: 2rem;
 }
 
 #services-page p {
@@ -315,10 +294,11 @@ i {
     background: #222;
     color: #fff;
     margin-left: 0rem;
+    transition: all 0.6s ease;
 }
 
 #about a:hover {
-    color: var(--secondary);
+    color: #edd4b2;
 }
 
 
@@ -355,25 +335,16 @@ i {
 
 #contact {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
     background: var(--primary);
     height: 77vh;
 }
 
-.contact-form {
-    background: var(--primary);
+#contact form {
     width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    z-index: 1;
-}
-
-#contact .contact-form form {
-    width: 100%;
 }
 
 #contact h3 {
@@ -392,7 +363,7 @@ i {
 ::placeholder {
     color: #000;
     opacity: 1;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #contact-page-spacing {

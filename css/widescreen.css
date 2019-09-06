@@ -5,3 +5,16 @@
 #contact {
     height: 100vw;
 }
+
+#navbar {
+    --nav-height: 100px;
+}
+
+#navbar h1 {
+    font-size: 0.7rem;
+}
+
+#navbar p,
+#navbar a {
+    font-size: 0.5rem;
+}

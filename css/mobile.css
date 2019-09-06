@@ -8,7 +8,7 @@ nav {
 
 nav .wrapper {
     max-width: 100%;
-    padding: 1rem 0 0.5rem 0;
+    padding-top: 1rem;
 }
 
 nav ul {
@@ -18,7 +18,7 @@ nav ul {
 
 nav li {
     font-size: 1rem;
-    padding: 0 1rem;
+    margin-top: 0.25rem;
 }
 
 #showcase-img,
@@ -35,6 +35,30 @@ nav li {
     font-size: 2.5rem;
 }
 
+#services {
+    flex-direction: column;
+    padding: 0;
+}
+
+#services h2 {
+    text-align: center;
+}
+
+#services div:first-child {
+    width: 75%;
+}
+
+#services div:nth-child(2) {
+    justify-content: center;
+    margin: 0;
+    padding-top: 0;
+}
+
+#services div {
+    margin: auto;
+    padding: 5rem 0;
+}
+
 #services-page div:nth-child(2) {
     flex-direction: column;
 }
@@ -47,9 +71,13 @@ nav li {
     margin: 3rem 5rem 5rem 5rem;
 }
 
+.underline {
+    background: none;
+}
+
 #about h2 {
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 
 #bio p {
@@ -146,6 +174,9 @@ nav li {
         #showcase p {
             font-size: 1.2rem;
         }
+        #services-page h2 {
+            font-size: 3rem;
+        }
         #projects {
             margin: -2rem 4rem 5rem 4rem;
         }
@@ -188,12 +219,15 @@ nav li {
             #bio {
                 height: 120vh;
             }
-            @media(max-width: 375px) {
+            @media(max-width: 450px) {
                 #navbar {
                     --nav-height: 100px;
                 }
                 #navbar .wrapper {
-                    padding: 0.5rem 0 0.2rem 0;
+                    padding: 1rem 0 0.2rem 0;
+                }
+                #navbar h1 {
+                    font-size: 0.75rem;
                 }
                 #showcase h1 {
                     padding: 0 0 0.3rem 0.25rem;
@@ -202,6 +236,24 @@ nav li {
                 #showcase p {
                     padding-right: 0.25rem;
                     font-size: 0.7rem;
+                }
+                #services-page h2 {
+                    font-size: 2.25rem;
+                }
+                #services-page h4 {
+                    font-size: 1.5rem;
+                }
+                i {
+                    font-size: 5rem;
+                }
+                #services h3 {
+                    font-size: 1.5rem;
+                }
+                #services div:nth-child(2):hover i {
+                    font-size: 6rem;
+                }
+                #services div:nth-child(2):hover h3 {
+                    font-size: 1.75rem;
                 }
                 #projects {
                     margin: 15rem 3rem 10rem 2rem;
@@ -215,11 +267,10 @@ nav li {
                 #contact input,
                 #contact textarea {
                     width: 100%;
-                    padding: 0.5rem;
                     margin-bottom: 1rem;
                 }
-                .contact-form .btn {
-                    margin-left: 0.5rem;
+                #contact .btn {
+                    margin: 1rem auto;
                 }
                 .footer p {
                     padding: 0;
