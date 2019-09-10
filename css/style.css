@@ -85,6 +85,11 @@ nav #logo {
     background-size: contain;
 }
 
+nav h1 {
+    font-size: 24px;
+    /* needed for Edge */
+}
+
 nav #title {
     padding-left: 1rem;
 }
@@ -168,8 +173,8 @@ nav a:hover {
 
 #services {
     display: flex;
-    align-content: space-between;
-    padding: 5rem 14rem;
+    align-content: space-around;
+    padding: 5rem 7rem;
     background: #e2e4e4;
 }
 
@@ -218,32 +223,21 @@ i {
 }
 
 #first-div {
-    margin: 5rem 15rem;
-}
-
-.underline {
-    width: 66%;
-    height: 5px;
-    margin: 0 auto;
-    background: var(--primary);
+    margin: 5rem 10rem;
 }
 
 #second-div {
-    margin: 3rem 10rem 5rem 10rem;
+    margin: 1rem 10rem 5rem 10rem;
     line-height: 2;
 }
 
 #services-page div:nth-child(2) {
     display: flex;
-    justify-content: space-between;
 }
 
-#services-page div:nth-child(2) div:first-child {
-    grid-column: 1/2;
-}
-
-#services-page h2 {
-    text-align: center;
+#second-div div:nth-child(2),
+#second-div div:nth-child(3) {
+    margin-left: 5rem;
 }
 
 #services-page p {
@@ -252,7 +246,7 @@ i {
 
 #services-page ul li ul {
     list-style-type: disc;
-    margin-left: 2rem;
+    margin-left: 1rem;
     padding-bottom: 2rem;
 }
 
@@ -282,12 +276,16 @@ i {
 /* About */
 
 #about {
-    padding: 5rem 7rem;
+    padding: 5rem 18rem 5rem 7rem;
 }
 
 #about p {
     line-height: 2;
     padding-bottom: 2rem;
+}
+
+#about :nth-child(2) {
+    margin-bottom: 0.5rem;
 }
 
 #about a {

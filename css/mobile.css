@@ -14,6 +14,8 @@ nav .wrapper {
 nav ul {
     max-width: 100%;
     padding: 0;
+    position: absolute;
+    bottom: 10px;
 }
 
 nav li {
@@ -40,8 +42,16 @@ nav li {
     padding: 0;
 }
 
+#services-page {
+    margin-left: 5rem;
+}
+
 #services h2 {
     text-align: center;
+}
+
+#services-page div:first-child {
+    margin-left: 0;
 }
 
 #services div:first-child {
@@ -59,10 +69,6 @@ nav li {
     padding: 5rem 0;
 }
 
-#services-page div:nth-child(2) {
-    flex-direction: column;
-}
-
 #first-div {
     margin: 5rem 5rem 0 5rem;
 }
@@ -78,6 +84,10 @@ nav li {
 #about h2 {
     text-align: center;
     padding-top: 10rem;
+}
+
+#bio-footer {
+    margin-top: 800px;
 }
 
 #bio p {
@@ -126,6 +136,11 @@ nav li {
     #services div:nth-child(2) {
         order: 1;
     }
+    #services-page div:nth-child(2),
+    #services-page div:nth-child(3) {
+        flex-direction: column;
+        margin-left: 0;
+    }
     #services-list {
         display: none;
     }
@@ -134,7 +149,6 @@ nav li {
     }
     #projects h2 {
         padding-bottom: 1rem;
-        padding-top: 8rem;
     }
     #projects p {
         text-align: start;
@@ -255,8 +269,16 @@ nav li {
                 #services div:nth-child(2):hover h3 {
                     font-size: 1.75rem;
                 }
+                #about {
+                    padding-right: 3rem;
+                    padding-left: 3rem;
+                }
+                #bio p {
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                }
                 #projects {
-                    margin: 15rem 3rem 10rem 2rem;
+                    margin: 3rem 3rem 10rem 2rem;
                 }
                 #projects h2 {
                     padding-bottom: 2rem;
@@ -274,8 +296,8 @@ nav li {
                 }
                 .footer p {
                     padding: 0;
-                    font-size: 0.75rem;
                     text-align: center;
+                    font-size: 0.6rem;
                 }
             }
         }
