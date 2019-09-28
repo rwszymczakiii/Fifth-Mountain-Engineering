@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="descrription" content="Fifth Mountain Engineering PLLC provides professional engineering and technical support, consulting and project management services backed by 41 years of experience.">
+    <meta name="description" content="Fifth Mountain Engineering PLLC provides professional engineering and technical support, consulting and project management services backed by 41 years of experience.">
     <meta name="keywords" content="engineering consulting, engineering project management, natural gas">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/mobile.css">
     <link rel="stylesheet" media="screen and (max-height: 450px)" href="css/widescreen.css">
     <script src="https://kit.fontawesome.com/1047bc795e.js"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Fifth Mountain Engineering, PLLC | Consulting</title>
 </head>
 
@@ -37,8 +46,9 @@
     <section id="showcase">
         <div id="showcase-img"></div>
         <div class="overlay"></div>
-        <h1>"Working together...</h1>
-        <p>to turn today's challenge into tomorrow's success."</p>
+        <h1>Working together</h1>
+        <a href="#services" class="btn">Learn More</a>
+        <p>to turn today's challenge into tomorrow's success</p>
     </section>
 
     <!-- Services -->
@@ -54,7 +64,7 @@
         <div>
             <a href="./services.html">
                 <i class="fas fa-burn"></i>
-                <h3>Natural Gas <br>Engineering</h3>
+                <h3>Natural Gas<br>Engineering</h3>
             </a>
         </div>
     </section>
@@ -70,32 +80,37 @@
             engineer and manager capable of defining objectives; formulating and implementing innovative, cost-effective solutions; and effectively communicating with all parties involved in complex projects.</p>
         <p>Mr. Rodgers is grateful to those clients, colleagues and friends that have made it possible for him to open the doors to Fifth Mountain Engineering, PLLC; enabling him to continuing providing quality consulting service to an industry that he has
             served with integrity his entire working career.</p>
-        <a href="./bio.html" class="btn">Read More</a>
+        <div>
+            <a href="./bio.html" class="btn">Read More</a>
+        </div>
     </section>
 
     <!-- Section: Contact -->
     <section id="contact">
-        <h3>Contact</h3>
-        <form name="contact" method="POST" data-netlify="true">
-            <div class="form-group">
-                <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-                <label for="phone"></label>
-                <input type="text" name="phone" id="phone" placeholder="Your Phone Number">
-            </div>
-            <div class="form-group">
-                <label for="message"></label>
-                <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
-            </div>
-            <input type="submit" value="Send" class="btn">
-        </form>
+        <div class="contact-div">
+            <h3>Contact</h3>
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </div>
     </section>
+    <div id="contact-page-spacing"></div>
 
     </section>
     <!-- Footer -->

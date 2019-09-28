@@ -1,3 +1,7 @@
+body {
+    -webkit-tap-highlight-color: transparent;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -23,7 +27,7 @@ nav li {
     margin-top: 0.25rem;
 }
 
-#showcase-img,
+#showcase,
 .overlay {
     height: 50vh;
 }
@@ -46,21 +50,18 @@ nav li {
     margin-left: 5rem;
 }
 
-#services h2 {
-    text-align: center;
-}
-
 #services-page div:first-child {
     margin-left: 0;
 }
 
 #services div:first-child {
     width: 75%;
+    padding-bottom: 2rem;
 }
 
 #services div:nth-child(2) {
     justify-content: center;
-    margin: 0;
+    margin: 0rem;
     padding-top: 0;
 }
 
@@ -77,17 +78,22 @@ nav li {
     margin: 3rem 5rem 5rem 5rem;
 }
 
-.underline {
-    background: none;
+#about {
+    width: 75%;
+    padding: 6rem 0;
+    margin: auto;
 }
 
-#about h2 {
-    text-align: center;
-    padding-top: 10rem;
+#about div {
+    width: 200px;
+}
+
+#about a {
+    margin-right: 0;
 }
 
 #bio-footer {
-    margin-top: 800px;
+    margin-top: 15rem;
 }
 
 #bio p {
@@ -95,12 +101,18 @@ nav li {
     padding-right: 5rem;
 }
 
-#contact-page-spacing {
-    height: 0rem;
+#contact input,
+#contact textarea {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
-#contact {
-    height: 100vh;
+#contact .btn {
+    margin: 1rem 0 5rem 0;
+}
+
+.footer {
+    position: relative;
 }
 
 .footer p {
@@ -114,7 +126,6 @@ nav li {
     }
     #showcase h1 {
         font-size: 3rem;
-        justify-self: flex-start;
     }
     #showcase p {
         font-size: 1.5rem;
@@ -136,6 +147,14 @@ nav li {
     #services div:nth-child(2) {
         order: 1;
     }
+    #services-page h2,
+    #projects h2 {
+        font-size: 3rem;
+        text-align: left;
+    }
+    #bio h2 {
+        font-size: 3rem;
+    }
     #services-page div:nth-child(2),
     #services-page div:nth-child(3) {
         flex-direction: column;
@@ -145,22 +164,12 @@ nav li {
         display: none;
     }
     #projects {
-        margin: 10rem 8rem;
+        margin: 10rem 5rem;
     }
     #projects h2 {
-        padding-bottom: 1rem;
+        padding-bottom: 3rem;
     }
     #projects p {
-        text-align: start;
-    }
-    #about {
-        padding: 0 5rem 5rem 5rem;
-        margin-top: -5rem;
-    }
-    #about h2 {
-        padding-bottom: 1rem;
-    }
-    #about p {
         text-align: start;
     }
     .footer {
@@ -184,17 +193,28 @@ nav li {
         }
         #showcase h1 {
             font-size: 2.5rem;
+            margin-bottom: -1rem;
         }
         #showcase p {
             font-size: 1.2rem;
         }
+        #showcase .btn {
+            font-size: 0.75rem;
+            margin-top: -0.5rem;
+        }
         #services-page h2 {
             font-size: 3rem;
         }
+        #contact h3 {
+            font-size: 3rem;
+        }
         #projects {
-            margin: -2rem 4rem 5rem 4rem;
+            margin: 10rem 4rem 5rem 4rem;
         }
         @media(max-width: 510px) {
+            h2 {
+                text-align: left;
+            }
             #navbar #title {
                 padding-left: 0.5rem;
             }
@@ -208,9 +228,6 @@ nav li {
             #navbar a {
                 font-size: 0.7rem;
             }
-            #navbar ul {
-                padding-left: 0.5rem;
-            }
             #navbar li {
                 padding: 0 0.1rem;
             }
@@ -221,17 +238,27 @@ nav li {
             #showcase p {
                 padding-right: 0.15rem;
                 font-size: 0.8rem;
-                font-weight: bold;
             }
             #services h2,
-            h2 {
-                font-size: 4rem;
+            #about h2 {
+                font-size: 3rem;
+                text-align: left;
+            }
+            #about div {
+                margin: 0;
+                text-align: left;
+                width: 200px;
+            }
+            #services p,
+            #about p,
+            #about .btn {
+                font-size: 1rem;
             }
             #projects p {
                 padding-bottom: 5rem;
             }
-            #bio {
-                height: 120vh;
+            #services-page {
+                margin-left: 2.5rem;
             }
             @media(max-width: 450px) {
                 #navbar {
@@ -251,48 +278,73 @@ nav li {
                     padding-right: 0.25rem;
                     font-size: 0.7rem;
                 }
-                #services-page h2 {
-                    font-size: 2.25rem;
-                }
-                #services-page h4 {
-                    font-size: 1.5rem;
+                #showcase .btn {
+                    padding: 0.5rem 1rem;
+                    margin-top: 1rem;
                 }
                 i {
                     font-size: 5rem;
                 }
+                #services h2 {
+                    margin-top: -2rem;
+                }
                 #services h3 {
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                 }
                 #services div:nth-child(2):hover i {
                     font-size: 6rem;
                 }
                 #services div:nth-child(2):hover h3 {
-                    font-size: 1.75rem;
+                    font-size: 1.5rem;
                 }
-                #about {
-                    padding-right: 3rem;
-                    padding-left: 3rem;
+                #services-page h2,
+                #projects h2,
+                #bio h2,
+                #contact-page h2 {
+                    font-size: 2.5rem;
+                }
+                #services-page h4 {
+                    font-size: 1rem;
+                    margin-top: -1.5rem;
+                    padding-bottom: 0.5rem;
+                }
+                #services-page ul {
+                    margin-bottom: 1rem;
+                }
+                #projects h4 {
+                    font-size: 1rem;
+                }
+                #bio h2 {
+                    margin-top: -1rem;
+                    margin-bottom: 2rem;
+                }
+                #bio-img {
+                    height: 7rem;
                 }
                 #bio p {
-                    padding-left: 3rem;
-                    padding-right: 3rem;
+                    padding: 2.5rem 3rem;
                 }
                 #projects {
-                    margin: 3rem 3rem 10rem 2rem;
+                    margin: 10rem 3rem 10rem 2rem;
                 }
                 #projects h2 {
                     padding-bottom: 2rem;
                 }
-                #projects h4 {
-                    font-size: 1.4rem;
+                #contact h3 {
+                    margin-bottom: 2rem;
+                }
+                #contact-page-h3 {
+                    margin-top: 4.5rem;
+                    margin-bottom: 0.5rem;
                 }
                 #contact input,
                 #contact textarea {
                     width: 100%;
-                    margin-bottom: 1rem;
                 }
-                #contact .btn {
-                    margin: 1rem auto;
+                #contact label {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin-top: 0;
                 }
                 .footer p {
                     padding: 0;

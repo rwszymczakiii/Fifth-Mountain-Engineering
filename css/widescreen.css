@@ -1,9 +1,30 @@
-#projects {
-    margin-top: 3rem;
+nav {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-auto-rows: 80px;
+    z-index: 4;
+    height: 75px;
 }
 
-#contact {
-    height: 100vw;
+nav #logo {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+}
+
+nav .wrapper {
+    padding: 0;
+    margin-left: 1rem;
+}
+
+nav #title {
+    padding-left: 0;
+}
+
+nav ul {
+    margin-right: 1.25rem;
+    grid-gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 #navbar {
@@ -17,4 +38,88 @@
 #navbar p,
 #navbar a {
     font-size: 0.5rem;
+}
+
+#showcase {
+    top: 75px;
+    margin-bottom: 2rem;
+}
+
+#showcase,
+.overlay {
+    height: 85vh;
+}
+
+#showcase h1 {
+    font-size: 2rem;
+    margin-top: -1rem;
+}
+
+#showcase p {
+    font-size: 1.2rem;
+}
+
+#showcase .btn {
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+i {
+    font-size: 5rem;
+}
+
+#services h3 {
+    font-size: 1.5rem;
+}
+
+#services p,
+#about p {
+    font-size: 1rem;
+    margin-top: -0.5rem;
+}
+
+#services-page h2,
+#projects h2,
+#bio h2 {
+    margin-top: -3rem;
+    font-size: 2.5rem;
+}
+
+#services-page h4,
+#projects h4 {
+    font-size: 1rem;
+}
+
+#bio h2 {
+    margin: -4rem 0 1.75rem 0;
+}
+
+#bio-img {
+    height: 7rem;
+}
+
+#bio p {
+    padding-top: 1.75rem;
+}
+
+#services h2,
+#about h2,
+#contact h3 {
+    font-size: 2.5rem;
+}
+
+#contact {
+    height: 150vw;
+    position: relative;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+}
+
+#contact-page-h3 {
+    margin-top: -3rem;
+}
+
+#contact-page-spacing {
+    background: var(--primary);
+    height: 5rem;
 }

@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="descrription" content="Fifth Mountain Engineering PLLC provides professional engineering and technical support, consulting and project management services backed by 41 years of experience.">
     <meta name="keywords" content="engineering consulting, engineering project management, natural gas">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1300px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/mobile.css">
     <link rel="stylesheet" media="screen and (max-height: 450px)" href="css/widescreen.css">
     <script src="https://kit.fontawesome.com/1047bc795e.js"></script>
     <title>Fifth Mountain Engineering, PLLC | Consulting</title>
@@ -39,28 +40,28 @@
     <!-- Section: Contact -->
     <div id="contact-page-spacing"></div>
     <section id="contact" class="fill-page">
-        <h3>Contact</h3>
-        <form name="contact" method="POST" data-netlify="true">
-            <div class="form-group">
-                <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-                <label for="phone"></label>
-                <input type="text" name="phone" id="phone" placeholder="Your Phone Number">
-            </div>
-            <div class="form-group">
-                <label for="message"></label>
-                <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
-            </div>
-            <input type="submit" value="Send" class="btn">
+        <div class="contact-div">
+            <h3 id=contact-page-h3>Contact</h3>
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn">
+        </div>
         </form>
-    </section>
-
     </section>
     <!-- Footer -->
     <footer class="footer">
